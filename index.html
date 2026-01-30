@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Serrano — AI / ML Researcher</title>
+  <meta name="description" content="AI Researcher focused on GPU-accelerated Reinforcement Learning and Trusted Autonomy for mission-critical autonomous platforms.">
+  <meta property="og:title" content="Christopher Serrano — AI / ML Researcher">
+  <meta property="og:description" content="GPU-Accelerated Deep RL | Sim2Real Autonomy | Trusted AI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bybunni.github.io">
+  <meta property="og:image" content="https://bybunni.github.io/assets/images/echos-flight.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">CS</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#press">Press</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name">Christopher Serrano</h1>
+      <p class="hero-title">AI / Machine Learning Researcher</p>
+      <p class="hero-tagline">GPU-Accelerated Deep RL &nbsp;|&nbsp; Sim2Real Autonomy &nbsp;|&nbsp; Trusted AI</p>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/christopher-serrano-120579b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=MkuPlnQAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+        </a>
+        <a href="https://arxiv.org/search/cs?searchtype=author&query=Serrano%2C+C+R" target="_blank" rel="noopener" aria-label="arXiv">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 3v18h18V3H3zm9 15.75L6.75 12 12 6.25 17.25 12 12 18.75zM12 8.5L8.5 12l3.5 3.5 3.5-3.5L12 8.5z"/></svg>
+        </a>
+        <a href="https://github.com/bybunni/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-content reveal">
+        <p>AI Researcher with a focus on GPU-accelerated Reinforcement Learning and Trusted Autonomy for mission-critical autonomous platforms. Experienced lead with a track record of successful development and integration of novel AI perception, control, and decision making systems into real world customer platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press / Featured Work -->
+  <section class="section section-alt press" id="press">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Work</h2>
+      <div class="press-grid">
+        <a href="https://www.twz.com/air/skunk-works-tests-sees-ai-enabled-l-29-jets-fly-mock-air-to-air-mission-on-orders-from-aerial-controller" target="_blank" rel="noopener" class="press-card reveal">
+          <div class="press-image">
+            <img src="assets/images/l29-black-jet.jpg" alt="L-29 jet on tarmac" loading="lazy">
+            <span class="press-badge">The War Zone</span>
+          </div>
+          <div class="press-body">
+            <h3>AI-Enabled L-29 Jets Fly Mock Air-To-Air Mission</h3>
+            <time>November 2024</time>
+          </div>
+        </a>
+        <a href="https://news.lockheedmartin.com/2024-11-21-Skunk-Works-R-Demonstrates-Airborne-Battle-Management-of-AI-Controlled-Aircraft" target="_blank" rel="noopener" class="press-card reveal">
+          <div class="press-image">
+            <img src="assets/images/echos-flight.jpg" alt="ECHOS flight test" loading="lazy">
+            <span class="press-badge">Lockheed Martin</span>
+          </div>
+          <div class="press-body">
+            <h3>Airborne Battle Management of AI-Controlled Aircraft</h3>
+            <time>November 2024</time>
+          </div>
+        </a>
+        <a href="https://news.lockheedmartin.com/2024-06-05-Skunk-Works-R-Demonstrates-AI-for-Air-to-Air-Tactical-Intercepts" target="_blank" rel="noopener" class="press-card reveal">
+          <div class="press-image">
+            <img src="assets/images/l29-jets.jpg" alt="Two L-29 jets performing simulated intercept" loading="lazy">
+            <span class="press-badge">Lockheed Martin</span>
+          </div>
+          <div class="press-body">
+            <h3>AI for Air-to-Air Tactical Intercepts</h3>
+            <time>June 2024</time>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section video-section">
+    <div class="container">
+      <div class="video-wrap reveal">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/bE2UpKHxsLg?start=102" title="DARPA Assured Autonomy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">DARPA Assured Autonomy &mdash; Autonomous MRZR with formally verified perception and Deep RL control</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section class="section section-alt experience" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+
+        <!-- Lockheed Martin -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Lockheed Martin Skunk Works</h3>
+              <span class="timeline-date">May 2023 &ndash; Present</span>
+            </div>
+            <p class="timeline-subtitle">Aeronautics, Advanced Development Programs</p>
+            <p class="timeline-role">Senior Staff AI / Machine Learning Engineer L5</p>
+            <ul>
+              <li><a href="https://www.twz.com/air/skunk-works-tests-sees-ai-enabled-l-29-jets-fly-mock-air-to-air-mission-on-orders-from-aerial-controller" target="_blank" rel="noopener">Skunk Works Tests See AI-Enabled L-29 Jets Fly Mock Air-To-Air Mission On Orders From Aerial Controller</a></li>
+              <li><a href="https://news.lockheedmartin.com/2024-11-21-Skunk-Works-R-Demonstrates-Airborne-Battle-Management-of-AI-Controlled-Aircraft" target="_blank" rel="noopener">Skunk Works Demonstrates Airborne Battle Management of AI-Controlled Aircraft</a></li>
+              <li><a href="https://news.lockheedmartin.com/2024-06-05-Skunk-Works-R-Demonstrates-AI-for-Air-to-Air-Tactical-Intercepts" target="_blank" rel="noopener">Skunk Works Demonstrates AI for Air-to-Air Tactical Intercepts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HRL — Scientist V -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>HRL Laboratories</h3>
+              <span class="timeline-date">Aug 2019 &ndash; May 2023</span>
+            </div>
+            <p class="timeline-subtitle">Intelligent Systems Laboratory, Operational Autonomy Center</p>
+            <p class="timeline-role">Scientist V (July 2021 &ndash; May 2023)</p>
+            <ul>
+              <li>Led and supported multiple CRAD proposals, including as co-PI on a DARPA BAA</li>
+              <li>Developed custom GPU-accelerated RL training environments that scaled simulation 10,000x</li>
+              <li>Developed novel efficient Transformer architectures for processing formal logics</li>
+              <li>Led and supported multiple IRAD proposals annually with a 67% win rate</li>
+            </ul>
+            <p class="timeline-role">Scientist IV (July 2020 &ndash; June 2021)</p>
+            <ul>
+              <li>Developed real-time Deep RL adversarial AI attack algorithm (RTA3) with 91% attack success rate</li>
+              <li>Integrated formally verified neural network perception and Deep RL controllers into autonomous MRZR for DARPA Assured Autonomy</li>
+              <li>Developed augmented reality adversarial AI attack against 9DoF autonomous vision systems</li>
+            </ul>
+            <p class="timeline-role">Post Masters Scientist (Aug 2019 &ndash; June 2020)</p>
+            <ul>
+              <li>Developed formal verification methodology (Generate &amp; Verify) for neural network perception systems</li>
+              <li>Built neural network LiDAR perception systems with formally verified performance guarantees</li>
+            </ul>
+            <p class="timeline-role">Graduate Research Intern (May 2018 &ndash; July 2019)</p>
+            <ul>
+              <li>Developed Introspection Learning algorithm &mdash; 99.6% reduction in failures during training</li>
+              <li>Built custom RL training environments in Python and C++ with PyBullet, Unreal Engine, and AirSim</li>
+            </ul>
+            <p class="timeline-patents">6 patent applications &middot; 8 invention disclosures &middot; 6 paper submissions</p>
+          </div>
+        </div>
+
+        <!-- Georgia Tech -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Georgia Institute of Technology</h3>
+              <span class="timeline-date">2017 &ndash; Present</span>
+            </div>
+            <p class="timeline-subtitle">CS 7642 Reinforcement Learning and Decision Making</p>
+            <p class="timeline-role">Instructional Associate (May 2019 &ndash; Present)</p>
+            <ul>
+              <li>Automated plagiarism detection utilizing MOSS document similarity</li>
+            </ul>
+            <p class="timeline-role">Teaching Assistant (March 2017 &ndash; April 2019)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section publications" id="publications">
+    <div class="container">
+      <h2 class="section-title reveal">Publications</h2>
+      <div class="pub-list">
+
+        <div class="pub-card pub-featured reveal">
+          <span class="pub-badge">Featured</span>
+          <img src="assets/images/assured-point-cloud-perception.png" alt="Point cloud sphere visualization" class="pub-image">
+          <h3>Assured Point Cloud Perception</h3>
+          <p class="pub-authors"><strong>Serrano, C.R.</strong>, Nogin, A., Warren, M.A. (2023)</p>
+          <p class="pub-desc">Demonstration of verification of global correctness for neural network point cloud perception models performing regression and classification.</p>
+          <p class="pub-venue">Presented at the 2023 IEEE International Conference on Assured Autonomy</p>
+          <a href="https://icaa-conf.github.io/icaa2023/" target="_blank" rel="noopener" class="pub-link">View publication</a>
+        </div>
+
+        <div class="pub-card reveal">
+          <h3>Introspection Learning</h3>
+          <p class="pub-authors"><strong>Serrano, C.R.</strong>, Warren, M.A. (2019)</p>
+          <p class="pub-desc">Synthesizes experience without requiring environment interaction by asking the policy directly about situations and actions, incorporating formal verification artifacts into Deep RL training.</p>
+          <p class="pub-venue">Presented at the 2019 AAAI Spring Symposium on Verification of Neural Networks</p>
+          <a href="https://arxiv.org/abs/1902.10754" target="_blank" rel="noopener" class="pub-link">View on arXiv</a>
+        </div>
+
+        <div class="pub-card reveal">
+          <h3>RTA3: A Real Time Adversarial Attack on Recurrent Neural Networks</h3>
+          <p class="pub-authors"><strong>Serrano, C.R.</strong>, Sylla, P., Gao, S., Warren, M.A. (2020)</p>
+          <p class="pub-desc">General application of deep reinforcement learning to the generation of periodic adversarial perturbations in a black-box approach to attack recurrent neural networks.</p>
+          <p class="pub-venue">Presented at the 2020 IEEE Deep Learning and Security Workshop</p>
+          <a href="https://ieee-security.org/TC/SPW2020/DLS/" target="_blank" rel="noopener" class="pub-link">View publication</a>
+        </div>
+
+        <div class="pub-card reveal">
+          <h3>Generate and Verify: Semantically Meaningful Formal Analysis of Neural Network Perception Systems</h3>
+          <p class="pub-authors"><strong>Serrano, C.R.</strong>, Sylla, P., Warren, M.A. (2020)</p>
+          <p class="pub-desc">A notion of global correctness for neural network perception models performing regression with respect to a generative neural network with a semantically meaningful latent space.</p>
+          <p class="pub-venue">arXiv preprint</p>
+          <a href="https://arxiv.org/abs/2012.09313" target="_blank" rel="noopener" class="pub-link">View on arXiv</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Patents -->
+  <section class="section section-alt patents" id="patents">
+    <div class="container">
+      <h2 class="section-title reveal">Patents</h2>
+      <div class="patent-list">
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-granted">Granted</span>
+          <h3>Solving based introspection to augment the training of reinforcement learning agents for control and planning on robots and autonomous vehicles</h3>
+          <p class="patent-meta">Warren, M.A., <strong>Serrano, C.R.</strong> (2020) &mdash; US Patent 11,669,731</p>
+        </div>
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-granted">Granted</span>
+          <h3>Automated system for generating approximate safety conditions for monitoring and verification</h3>
+          <p class="patent-meta">Heersink, B.N., Warren, M.A., <strong>Serrano, C.R.</strong> (2021) &mdash; US Patent 11,663,370</p>
+        </div>
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-granted">Granted</span>
+          <h3>Deep reinforcement learning based method for surreptitiously generating signals to fool a recurrent neural network</h3>
+          <p class="patent-meta">Warren, M.A., <strong>Serrano, C.R.</strong>, Sylla, P. (2021) &mdash; US Patent 12,073,318</p>
+        </div>
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-application">Application</span>
+          <h3>Neural network architecture for small lidar processing networks for slope estimation and ground plane segmentation</h3>
+          <p class="patent-meta"><strong>Serrano, C.R.</strong>, Warren, M.A., Nogin, A. (2021) &mdash; US Patent App. 16/950,803</p>
+        </div>
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-application">Application</span>
+          <h3>Deep reinforcement learning method for generation of environmental features for vulnerability analysis and improved performance of computer vision systems</h3>
+          <p class="patent-meta">Warren, M.A., <strong>Serrano, C.R.</strong> (2021) &mdash; US Patent App. 17/115,646</p>
+        </div>
+
+        <div class="patent-card reveal">
+          <span class="patent-badge patent-application">Application</span>
+          <h3>Method for proving or identifying counter-examples in neural network systems that process point cloud data</h3>
+          <p class="patent-meta">Warren, M.A., <strong>Serrano, C.R.</strong>, Nogin, A. (2021) &mdash; US Patent App. 17/078,079</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <h3>Georgia Institute of Technology</h3>
+          <p class="edu-degree">MS, Computer Science</p>
+          <p class="edu-detail">Specializing in Machine Learning</p>
+          <span class="edu-year">2019</span>
+        </div>
+        <div class="edu-card reveal">
+          <h3>University of California at Santa Barbara</h3>
+          <p class="edu-degree">BA, Political Science</p>
+          <p class="edu-detail">Minors in History and Art History</p>
+          <span class="edu-year">2004</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/christopher-serrano-120579b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=MkuPlnQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://arxiv.org/search/cs?searchtype=author&query=Serrano%2C+C+R" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://github.com/bybunni/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Christopher Serrano</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
