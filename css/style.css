@@ -518,6 +518,11 @@ img {
   mix-blend-mode: lighten;
 }
 
+.pub-image-light {
+  mix-blend-mode: normal;
+  border-radius: 8px;
+}
+
 .pub-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
