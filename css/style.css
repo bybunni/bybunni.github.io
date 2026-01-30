@@ -711,22 +711,6 @@ img {
 
 /* Mobile */
 @media (max-width: 640px) {
-  .hero-sep {
-    display: none;
-  }
-
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .hero-tagline {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
   .section {
     padding: 64px 0;
   }
