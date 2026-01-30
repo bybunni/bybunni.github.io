@@ -514,6 +514,7 @@ img {
   width: 66%;
   border-radius: 8px;
   margin: 0 auto 16px;
+  mix-blend-mode: lighten;
 }
 
 .pub-card h3 {
