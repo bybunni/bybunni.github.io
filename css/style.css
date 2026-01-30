@@ -241,15 +241,16 @@ img {
   }
 }
 
-/* === About === */
-.about-content {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 1.125rem;
-  line-height: 1.75;
+/* === About (in hero) === */
+.hero-about {
+  max-width: 600px;
+  margin: 48px auto 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: var(--text-secondary);
-  border-left: 3px solid var(--accent);
-  padding-left: 24px;
+  opacity: 0.7;
+  text-align: center;
+  animation: fadeInUp 0.8s 0.3s ease-out both;
 }
 
 /* === Press Gallery === */
