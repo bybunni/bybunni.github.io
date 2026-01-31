@@ -205,6 +205,10 @@ img {
   color: var(--accent);
   font-weight: 600;
   margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 8px;
 }
 
 .hero-tagline {
@@ -212,6 +216,15 @@ img {
   font-size: clamp(0.75rem, 1.5vw, 0.9rem);
   color: var(--text-secondary);
   margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 8px;
+}
+
+.hero-sep {
+  color: var(--text-secondary);
+  opacity: 0.5;
 }
 
 .hero-links {
@@ -747,6 +760,17 @@ img {
 
   .nav-links a {
     font-size: 1rem;
+  }
+
+  /* Hero mobile */
+  .hero-title,
+  .hero-tagline {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-sep {
+    display: none;
   }
 
   /* Press */
