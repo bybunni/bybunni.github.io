@@ -13,24 +13,16 @@
     }
   }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  if (nav) {
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
-  // --- Smooth scroll ---
-  var navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 64;
-
-  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      var targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      var target = document.querySelector(targetId);
-      if (!target) return;
-
-      e.preventDefault();
-      var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-      window.scrollTo({ top: top, behavior: 'smooth' });
-    });
-  });
+  // --- Footer year ---
+  var footerYear = document.getElementById('footer-year');
+  if (footerYear) {
+    footerYear.textContent = String(new Date().getFullYear());
+  }
 
   // --- Scroll reveal ---
   var reveals = document.querySelectorAll('.reveal');
@@ -63,39 +55,57 @@
   var links = document.getElementById('nav-links');
   var overlay = document.getElementById('nav-overlay');
 
-  function openMenu() {
-    toggle.classList.add('active');
-    links.classList.add('open');
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeMenu() {
-    toggle.classList.remove('active');
-    links.classList.remove('open');
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  toggle.addEventListener('click', function () {
-    if (links.classList.contains('open')) {
-      closeMenu();
-    } else {
-      openMenu();
+  if (toggle && links && overlay) {
+    function openMenu() {
+      toggle.classList.add('active');
+      toggle.setAttribute('aria-expanded', 'true');
+      links.classList.add('open');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
-  });
 
-  overlay.addEventListener('click', closeMenu);
-
-  // Close on nav link click
-  links.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // Close on Escape
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      closeMenu();
+    function closeMenu() {
+      toggle.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('open');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
     }
-  });
+
+    toggle.addEventListener('click', function () {
+      if (links.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on nav link click
+    links.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closeMenu();
+      }
+    });
+
+    // Ensure body scroll is restored after leaving mobile viewport.
+    var mobileBreakpoint = window.matchMedia('(max-width: 640px)');
+    function onViewportChange(event) {
+      if (!event.matches) {
+        closeMenu();
+      }
+    }
+
+    if (typeof mobileBreakpoint.addEventListener === 'function') {
+      mobileBreakpoint.addEventListener('change', onViewportChange);
+    } else if (typeof mobileBreakpoint.addListener === 'function') {
+      mobileBreakpoint.addListener(onViewportChange);
+    }
+  }
 })();
